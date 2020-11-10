@@ -1,0 +1,80 @@
+# JAVA - Compiled class file
+*.class
+*.log
+
+# MAVEN
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# ECLIPSE IDE 
+metadata
+bin/
+tmp/
+*.launch
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders
+
+
+# VSCODE IDE
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+.history/
+
+
+# WINDOWS thumbnail cache files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+
+# WINDOWS - Dump file
+*.stackdump
+
+# WINDOWS Folder config file
+[Dd]esktop.ini
+
+# WINDOWS - Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# WINDOWS shortcuts
+*.lnk
+
+
+# LINUX
+*~
+
+# LINUX - temporary files which can be created if a process still has a handle open of a deleted file
+.fuse_hidden*
+
+# LINUX - KDE directory preferences
+.directory
+
+# LINUX - Linux trash folder which might appear on any partition or disk
+.Trash-*
+
+# LINUX - .nfs files are created when an open file is removed but is still being accessed
+.nfs*
+
+# MACOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
