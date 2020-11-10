@@ -6,7 +6,7 @@
 | :--------------------------------------------- | :------------------ |   
 | Eclipse IDE for Java Developer Version 2020-09 | [Download](https://www.eclipse.org/downloads/packages/release/2020-09/m2/eclipse-ide-java-developers) |
 
-# Instalações:
+## Instalar:
 
 |                    |                     |   
 | :----------------- | :------------------ |   
@@ -14,7 +14,7 @@
 | Apache Maven 3.6.3 | [Download](https://maven.apache.org/download.cgi) |  
 | Git Version 2.29.2 | [Download](https://git-scm.com/downloads) |  
 
-# Configurações:
+## Configurar:
 
 |                                            |                     |   
 | :----------------------------------------- | :------------------ |  
