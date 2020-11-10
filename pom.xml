@@ -1,6 +1,127 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>io.github.brunorojo</groupId>
-  <artifactId>skeleton-cucumber-selenium</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://maven.apache.org/POM/4.0.0"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>io.github.brunorojo</groupId>
+	<artifactId>skeleton-cucumber-selenium</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<properties>
+
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+		<cucumber.version>6.8.1</cucumber.version>
+		<selenium.version>3.141.59</selenium.version>
+
+		<!-- <junit.four.version>4.13</junit.four.version> -->
+		<!-- <junit.jupiter.version>5.7.0</junit.jupiter.version> -->
+
+		<!-- <restassured.version>4.3.1</restassured.version> -->
+		<!-- <googlesimplejson.version>1.1.1</googlesimplejson.version> -->
+
+	</properties>
+
+	<dependencies>
+
+		<!-- SELENIUM -->
+		<!-- SELENIUM - https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>${selenium.version}</version>
+		</dependency>
+
+		<!-- SELENIUM FIREFOX DRIVER - https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-firefox-driver -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-firefox-driver</artifactId>
+			<version>${selenium.version}</version>
+		</dependency>
+
+		<!-- SELENIUM CHROME DRIVER - https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-chrome-driver</artifactId>
+			<version>${selenium.version}</version>
+		</dependency>
+
+
+		<!-- SELENIUM IE DRIVER - https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-ie-driver -->
+		<!-- <dependency> <groupId>org.seleniumhq.selenium</groupId> <artifactId>selenium-ie-driver</artifactId> 
+			<version>${selenium.version}</version> </dependency> -->
+
+		<!-- SELENIUM SAFARI DRIVER - https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-safari-driver -->
+		<!-- <dependency> <groupId>org.seleniumhq.selenium</groupId> <artifactId>selenium-safari-driver</artifactId> 
+			<version>${selenium.version}</version> </dependency> -->
+
+		<!-- SELENIUM EDGE DRIVER - https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-edge-driver -->
+		<!-- <dependency> <groupId>org.seleniumhq.selenium</groupId> <artifactId>selenium-edge-driver</artifactId> 
+			<version>${selenium.version}</version> </dependency> -->
+
+		<!-- SELENIUM OPERA DRIVER - https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-opera-driver -->
+		<!-- <dependency> <groupId>org.seleniumhq.selenium</groupId> <artifactId>selenium-opera-driver</artifactId> 
+			<version>${selenium.version}</version> </dependency> -->
+
+
+		<!-- CUCUMBER -->
+		<!-- CUCUMBER-JAVA - https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-java</artifactId>
+			<version>${cucumber.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- CUCUMBER-JUNIT - https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-junit</artifactId>
+			<version>${cucumber.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- JUNIT -->
+		<!-- JUNIT 4 - https://mvnrepository.com/artifact/junit/junit -->
+		<!-- <dependency> <groupId>junit</groupId> <artifactId>junit</artifactId> 
+			<version>${junit.four.version}</version> <scope>test</scope> </dependency> -->
+
+		<!-- JUNIT JUPITER - https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
+		<!-- <dependency> <groupId>org.junit.jupiter</groupId> <artifactId>junit-jupiter-api</artifactId> 
+			<version>${junit.jupiter.version}</version> <scope>test</scope> </dependency> -->
+
+
+		<!-- REST-ASSURED -->
+		<!-- REST-ASSURED - https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+		<!-- <dependency> <groupId>io.rest-assured</groupId> <artifactId>rest-assured</artifactId> 
+			<version>${restassured.version}</version> </dependency> -->
+
+		<!-- REST-ASSURED COMMON - https://mvnrepository.com/artifact/io.rest-assured/rest-assured-common -->
+		<!-- <dependency> <groupId>io.rest-assured</groupId> <artifactId>rest-assured-common</artifactId> 
+			<version>${restassured.version}</version> </dependency> -->
+
+		<!-- GOOGLE CODE JSON SIMPLES -->
+		<!-- Google Code JSON Simple - https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple -->
+		<!--<dependency> <groupId>com.googlecode.json-simple</groupId> <artifactId>json-simple</artifactId> 
+			<version>${googlesimplejson.version}</version> </dependency> -->
+
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.1</version>
+				<configuration>
+					<encoding>UTF-8</encoding>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
 </project>
