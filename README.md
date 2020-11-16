@@ -20,3 +20,6 @@
 | :----------------------------------------- | :------------------ |  
 | Configurar variável de ambiente JAVA_HOME  | [Manual](https://docs.oracle.com/en/cloud/saas/enterprise-performance-management-common/diepm/epm_set_java_home_104x6dd63633_106x6dd6441c.html) |  
 | Configurar variável de ambiente MAVEN_HOME | [Manual](https://www.tutorialspoint.com/maven/maven_environment_setup.htm) | 
+
+## Drivers
+Adicione os drivers no path do sistema operacional.
